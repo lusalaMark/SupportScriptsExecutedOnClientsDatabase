@@ -1,0 +1,1 @@
+select PassportImageId,SignatureImageId,IdentityCardFrontSideImageId, IdentityCardBackSideImageId from vfin_customers where IdentityCardFrontSideImageId is not null and cast(ModifiedDate as date) = cast(getdate() as date)
